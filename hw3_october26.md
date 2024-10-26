@@ -24,3 +24,31 @@ After running ```pipenv install scikit-learn==1.5.7```, I successfully generated
 
 (Before that, I mistakenly used the command ```pipenv install sklearn==1.5.7```, which caused issues. It took me some time to realize the error. Even though I had a ```Pipfile.lock``` file, it did not include the hash for Scikit-learn, which led to the problem. Once I corrected the package name to scikit-learn, everything worked as expected.)
 
+## Models
+We've prepared a dictionary vectorizer and a model.
+
+They were trained (roughly) using this code:
+
+```
+features = ['job', 'duration', 'poutcome']
+dicts = df[features].to_dict(orient='records')
+
+dv = DictVectorizer(sparse=False)
+X = dv.fit_transform(dicts)
+
+model = LogisticRegression().fit(X, y)
+```
+
+Note: You don't need to train the model. This code is just for your reference.
+
+And then saved with Pickle. Download them:
+
+DictVectorizer
+LogisticRegression
+With wget:
+
+```
+PREFIX=https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp/master/cohorts/2024/05-deployment/homework
+wget $PREFIX/model1.bin
+wget $PREFIX/dv.bin
+```
