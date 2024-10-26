@@ -69,3 +69,7 @@ If you're getting errors when unpickling the files, check their checksum:
 ```$ md5sum model1.bin dv.bin
 3d8bb28974e55edefa000fe38fd3ed12  model1.bin
 7d37616e00aa80f2152b8b0511fc2dff  dv.bin```
+
+## Answer
+
+__I calculated the probability that the client will subscribe, and it is 0.759.__
