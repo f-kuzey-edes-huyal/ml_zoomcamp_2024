@@ -52,3 +52,20 @@ PREFIX=https://raw.githubusercontent.com/DataTalksClub/machine-learning-zoomcamp
 wget $PREFIX/model1.bin
 wget $PREFIX/dv.bin
 ```
+## Question 3
+Let's use these models!
+
+Write a script for loading these models with pickle
+Score this client:
+```{"job": "management", "duration": 400, "poutcome": "success"}```
+What's the probability that this client will get a subscription?
+
+- 0.359
+- 0.559
+- 0.759
+- 0.959
+If you're getting errors when unpickling the files, check their checksum:
+
+```$ md5sum model1.bin dv.bin
+3d8bb28974e55edefa000fe38fd3ed12  model1.bin
+7d37616e00aa80f2152b8b0511fc2dff  dv.bin```
