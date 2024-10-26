@@ -9,4 +9,11 @@ Use ```--version``` to find out
 
 I initially created a folder named hw_deployment. Then, using the Anaconda prompt, I activated the ml-zoomcamp environment by running conda activate ml-zoomcamp. After that, I navigated to my folder by using cd ```hw_deployment```. I installed pipenv in this folder by running ```pip install pipenv```, which helps create a virtual environment. To check the installed version of pipenv, I ran pipenv.__version__, which returned __'2024.2.0'__.
 
+## Question 2
+Use ```Pipenv``` to install ```Scikit-Learn``` version ```1.5.2```
 
+What's the first hash for ```scikit-learn``` you get in ```Pipfile.lock```?
+
+Note: you should create an empty folder for homework and do it there.
+
+## Answer 2
