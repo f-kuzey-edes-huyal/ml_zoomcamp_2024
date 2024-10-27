@@ -134,4 +134,5 @@ After running the following commands:
 ```docker pull svizor/zoomcamp-model:3.11.5-slim```
 
 ```docker run -it -p 9696:9696 svizor/zoomcamp-model:3.11.5-slim```
+
 __The Docker image has a volume of 130.49 MB.__
