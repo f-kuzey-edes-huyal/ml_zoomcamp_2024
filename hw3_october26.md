@@ -74,3 +74,19 @@ If you're getting errors when unpickling the files, check their checksum:
 ## Answer 3
 
 __I calculated the probability that the client will subscribe, and it is 0.759.__
+
+## Question 4
+Now let's serve this model as a web service
+
+Install ```Flask``` and ```gunicorn``` (or waitress, if you're on Windows)
+Write ```Flask``` code for serving the model
+Now score this client using requests:
+```url = "YOUR_URL"```
+```client = {"job": "student", "duration": 280, "poutcome": "failure"}```
+```requests.post(url, json=client).json()```
+
+What's the probability that this client will get a subscription?
+- 0.335
+- 0.535
+- 0.735
+- 0.935
