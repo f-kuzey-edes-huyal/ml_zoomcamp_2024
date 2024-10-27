@@ -99,7 +99,7 @@ What's the probability that this client will get a subscription?
 
 ```{'churn': False, 'churn_probability': 0.33480703475511053}```
 
-__Docker__
+## Docker
 
 Install ```Docker```. We will use it for the next two questions.
 
@@ -111,6 +111,19 @@ This is how the Dockerfile for this image looks like:
 
 ```FROM python:3.11.5-slim
 WORKDIR /app
-COPY ["model2.bin", "dv.bin", "./"]```
-We already built it and then pushed it to ```svizor/zoomcamp-model:3.11.5-slim.```
+COPY ["model2.bin", "dv.bin", "./"]
+```
+We already built it and then pushed it to ```svizor/zoomcamp-model:3.11.5-slim```.
 
+## Question 5
+
+Download the base image ```svizor/zoomcamp-model:3.11.5-slim```. You can easily make it by using docker pull command.
+
+So what's the size of this base image?
+
+- 45 MB
+- 130 MB
+- 245 MB
+- 330 MB
+
+You can get this information when running docker images - it'll be in the "SIZE" column.
