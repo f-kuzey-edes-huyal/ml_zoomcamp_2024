@@ -98,3 +98,19 @@ What's the probability that this client will get a subscription?
 ## Answer 4 
 
 ```{'churn': False, 'churn_probability': 0.33480703475511053}```
+
+__Docker__
+
+Install ```Docker```. We will use it for the next two questions.
+
+For these questions, we prepared a base image: ```svizor/zoomcamp-model:3.11.5-slim```. You'll need to use it (see Question 5 for an example).
+
+This image is based on ```python:3.11.5-slim``` and has a logistic regression model (a different one) as well a dictionary vectorizer inside.
+
+This is how the Dockerfile for this image looks like:
+
+```FROM python:3.11.5-slim
+WORKDIR /app
+COPY ["model2.bin", "dv.bin", "./"]```
+We already built it and then pushed it to ```svizor/zoomcamp-model:3.11.5-slim.```
+
