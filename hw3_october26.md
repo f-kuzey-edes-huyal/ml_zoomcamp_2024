@@ -143,7 +143,8 @@ Now create your own Dockerfile based on the image we prepared.
 It should start like that:
 
 ```FROM svizor/zoomcamp-model:3.11.5-slim```
-# add your stuff here
+
+add your stuff here
 Now complete it:
 
 - Install all the dependencies form the Pipenv file
