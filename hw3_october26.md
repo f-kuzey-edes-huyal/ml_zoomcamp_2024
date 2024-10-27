@@ -94,3 +94,7 @@ What's the probability that this client will get a subscription?
 - 0.535
 - 0.735
 - 0.935
+
+## Answer 4 
+
+```{'churn': False, 'churn_probability': 0.33480703475511053}```
