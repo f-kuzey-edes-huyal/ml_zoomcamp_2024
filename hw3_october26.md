@@ -79,10 +79,14 @@ __I calculated the probability that the client will subscribe, and it is 0.759._
 Now let's serve this model as a web service
 
 Install ```Flask``` and ```gunicorn``` (or waitress, if you're on Windows)
+
 Write ```Flask``` code for serving the model
+
 Now score this client using requests:
 ```url = "YOUR_URL"```
+
 ```client = {"job": "student", "duration": 280, "poutcome": "failure"}```
+
 ```requests.post(url, json=client).json()```
 
 What's the probability that this client will get a subscription?
