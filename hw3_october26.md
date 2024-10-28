@@ -167,3 +167,12 @@ What's the probability that this client will get a subscription now?
 - 0.530
 - 0.757
 - 0.960
+
+## Answer 6
+
+
+```
+{
+  "churn": true,
+  "churn_probability": 0.756743795240796
+}```
