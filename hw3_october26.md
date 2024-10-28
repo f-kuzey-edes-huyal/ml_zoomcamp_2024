@@ -170,6 +170,9 @@ What's the probability that this client will get a subscription now?
 
 ## Answer 6
 
+```docker build -t zoomcamp_6 .```
+
+```docker run -p 9696:9696 zoomcamp_6```
 
 ```
 {
